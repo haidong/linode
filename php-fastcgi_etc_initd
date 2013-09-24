@@ -1,5 +1,16 @@
 #!/bin/bash
 
+### BEGIN INIT INFO
+# Provides:          php-fastcgi
+# Required-Start:    $all
+# Required-Stop:     $all
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the php-fastcgi web server
+# Description:       starts php-fastcgi using start-stop-daemon
+### END INIT INFO
+
+
 PHP_SCRIPT=/usr/bin/php-fastcgi
 FASTCGI_USER=www-data
 FASTCGI_GROUP=www-data
